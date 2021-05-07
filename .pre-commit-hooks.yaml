@@ -1,0 +1,14 @@
+- id: latexindent
+  name: latexindent
+  description: "Mirror of Latexindent.pl by Chris Hughes for pre-commit."
+  language: python
+  entry: pylatexindent
+  types: [tex]
+  require_serial: true
+- id: chktex
+  name: ChkTeX
+  description: "Mirror of ChkTeX semantic checker for pre-commit."
+  language: system
+  entry: chktex --quiet --verbosity=0
+  types: [tex]
+  require_serial: true
